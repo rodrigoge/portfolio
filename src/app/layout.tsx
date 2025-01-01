@@ -1,0 +1,25 @@
+import type { Metadata } from "next";
+import { Manrope } from 'next/font/google';
+
+export const metadata: Metadata = {
+  title: "Rodrigo Gouveia Estevão - Portfólio",
+  description: "A portfolio project being build with Next.js, Sass & Typescript.",
+};
+
+const font = Manrope({
+  weight: ["200", "300", "400", "500", "600", "700", "800"]
+})
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html className={font.className}>
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}
