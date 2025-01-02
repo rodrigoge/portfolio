@@ -1,5 +1,5 @@
 @use '../styles/global.scss' as vars;
 
-html, body {
+* {
     background-color: vars.$black;
 }

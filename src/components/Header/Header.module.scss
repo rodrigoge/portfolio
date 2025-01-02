@@ -1,3 +1,59 @@
+@use '../../styles/global' as vars;
+
 .header {
-    background-color: red;
+    background: none;
+    width: 100% auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+
+    .logo {
+        .logo_image {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 32;
+
+        select {
+            color: vars.$white;
+            border-radius: 6px;
+            border: 1px solid vars.$grey;
+            height: 30px;
+            width: 60px;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Manrope';
+            font-weight: 800;
+            padding: 0 8px;
+
+            option {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Manrope';
+                font-weight: 800;
+                padding: 0 8px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: vars.$white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+    }
 }
