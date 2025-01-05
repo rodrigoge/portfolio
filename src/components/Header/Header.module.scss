@@ -1,14 +1,16 @@
 @use '../../styles/global' as vars;
 
 .header {
-    background: none;
-    width: 100% auto;
+    background-color: transparent;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 180px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 
     .logo {
         .logo_image {
@@ -17,54 +19,50 @@
         }
     }
 
-    .menu_navigation .menu_navigation_list{
+    .menu_navigation .menu_navigation_list {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 32px;
 
-        select {
-            appearance: none;
-            color: vars.$white;
-            border-radius: 6px;
-            border: 1px solid vars.$grey;
-            height: 30px;
-            width: 65px;
-            display: flex;
-            flex-direction: row;
-            font-family: 'Manrope';
-            font-weight: 800;
-            padding: 0 8px;
-            cursor: pointer;
-            text-align: right;
-            background-color: vars.$black;
-
-            option {
-                appearance: none;
-                border-radius: 8px !important;
-                display: flex;
-                flex-direction: row;
-                font-family: 'Manrope';
-                font-weight: 800;
-                padding: 0 8px;
-                background-color: vars.$black;
-
-                &:focus, &:hover, &:target, &:active, &:focus-within, &:enabled {
-                    background-color: red;
-                }
-            }
-        }
-
         a {
             text-decoration: none;
             color: vars.$white;
             font-size: 14px;
             font-weight: 600;
+
+            .icon {
+                display: none;
+            }
         }
 
         a:hover {
             opacity: 0.6;
         }
+    }
+}
+
+@media (max-width: 920px) {
+    .header {
+        padding: 0 90px;
+
+        .menu_navigation .menu_navigation_list{
+            a {
+                .text_menu {
+                    display: none;
+                }
+        
+                .icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .header {
+        padding: 0 6px;
     }
 }
