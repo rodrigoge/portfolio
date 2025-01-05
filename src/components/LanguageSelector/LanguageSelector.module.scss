@@ -1,0 +1,48 @@
+@use '../../styles/global' as vars;
+
+.language_selector {
+    border: 1px solid vars.$grey;
+    border-radius: 6px;
+    color: vars.$white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 6px;
+    cursor: pointer;
+    
+    .language_selected {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: absolute;
+        margin-top: 10px;
+        border: 1px solid vars.$grey;
+        border-radius: 2px;
+
+        .language {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            padding: 8px 12px;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}

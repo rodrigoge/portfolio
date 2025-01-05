@@ -7,7 +7,8 @@ export const metadata: Metadata = {
 };
 
 const font = Manrope({
-  weight: ["200", "300", "400", "500", "600", "700", "800"]
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  preload: false
 })
 
 export default function RootLayout({

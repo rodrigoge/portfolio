@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../assets/logo.svg'
+import LanguageSelector from '../LanguageSelector/LanguageSelector'
 import styles from './Header.module.scss'
 
 export default function Header() {
@@ -10,15 +11,9 @@ export default function Header() {
                 <Image src={logo} alt='Logotype' className={styles.logo_image}/>
             </Link>
 
-            <nav>
-                <ul>
-                    <select name="language-selector-select" id="language-selector-select">
-                        <option value="portuguese" lang='pt/br' defaultValue={''}>
-                            BR
-                        </option>
-                        <option value="english" lang='eng'>EN</option>
-                    </select>
-
+            <nav className={styles.menu_navigation}>
+                <ul className={styles.menu_navigation_list}>
+                    <LanguageSelector />
                     <Link href={"/about"}>About Me</Link>
                     <Link href={"/career"}>Career</Link>
                     <Link href={"/works"}>Works</Link>

@@ -17,31 +17,42 @@
         }
     }
 
-    nav ul{
+    .menu_navigation .menu_navigation_list{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 32;
+        gap: 32px;
 
         select {
+            appearance: none;
             color: vars.$white;
             border-radius: 6px;
             border: 1px solid vars.$grey;
             height: 30px;
-            width: 60px;
+            width: 65px;
             display: flex;
             flex-direction: row;
             font-family: 'Manrope';
             font-weight: 800;
             padding: 0 8px;
+            cursor: pointer;
+            text-align: right;
+            background-color: vars.$black;
 
             option {
+                appearance: none;
+                border-radius: 8px !important;
                 display: flex;
                 flex-direction: row;
                 font-family: 'Manrope';
                 font-weight: 800;
                 padding: 0 8px;
+                background-color: vars.$black;
+
+                &:focus, &:hover, &:target, &:active, &:focus-within, &:enabled {
+                    background-color: red;
+                }
             }
         }
 
