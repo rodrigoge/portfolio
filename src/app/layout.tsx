@@ -1,3 +1,4 @@
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Metadata } from "next";
 import { Manrope } from 'next/font/google';
 
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html className={font.className}>
       <body>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
