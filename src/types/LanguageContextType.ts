@@ -1,6 +1,8 @@
-import { LanguageTypeEnum } from "@/types/LanguageTypeEnum";
+import { translations } from "@/translations/translations";
+import { LanguageTypeEnum } from "./LanguageTypeEnum";
 
-export type LanguageContextType = {
-    language: LanguageTypeEnum;
-    setLanguage: (lang: LanguageTypeEnum) => void;
+export interface LanguageContextType {
+  language: LanguageTypeEnum;
+  setLanguage: (language: LanguageTypeEnum) => void;
+  t: (key: keyof typeof translations["EN"]) => string;
 }
