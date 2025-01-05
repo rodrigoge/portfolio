@@ -1,6 +1,7 @@
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Metadata } from "next";
 import { Manrope } from 'next/font/google';
+import '../styles/styles.scss';
 
 export const metadata: Metadata = {
   title: "Rodrigo Gouveia Estevão - Portfólio",

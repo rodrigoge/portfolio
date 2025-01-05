@@ -1,7 +1,7 @@
 @use '../../styles/global' as vars;
 
 .header {
-    background-color: transparent;
+    background-color: vars.$black;
     height: 60px;
     display: flex;
     flex-direction: row;
