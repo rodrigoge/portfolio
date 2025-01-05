@@ -27,25 +27,25 @@ export default function Header() {
                         <span className={styles.text_menu}>
                             {t("aboutMe")}
                         </span>
-                        <FiAtSign className={styles.icon} size={20}/>
+                        <FiAtSign className={styles.icon} />
                     </Link>
                     <Link href={"/career"}>
                         <span className={styles.text_menu}>
                             {t("career")}
                         </span>
-                        <MdWorkOutline className={styles.icon} size={22}/>
+                        <MdWorkOutline className={styles.icon} />
                     </Link>
                     <Link href={"/works"}>
                         <span className={styles.text_menu}>
                             {t("works")}
                         </span>
-                        <RiComputerLine className={styles.icon} size={20}/>
+                        <RiComputerLine className={styles.icon} />
                     </Link>
                     <Link href={"/contact"}>
                         <span className={styles.text_menu}>
                             {t("contact")}
                         </span>
-                        <BsChatSquareDots className={styles.icon} size={20}/>
+                        <BsChatSquareDots className={styles.icon} />
                     </Link>
                 </ul>
             </nav>
