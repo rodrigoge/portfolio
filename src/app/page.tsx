@@ -34,6 +34,10 @@ export default function Home() {
             <span className={styles.content}>
               {t("homeContent")}
             </span>
+            <br />
+            <span className={styles.content}>
+              {t("homeSecondContent")}
+            </span>
           </div>
           <div className={styles.hero_right_side}>
             <Image src={heroImg} alt="Hero Image"/>
