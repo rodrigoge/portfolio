@@ -19,28 +19,35 @@
         }
     }
 
-    .menu_navigation .menu_navigation_list {
+    .menu_navigation {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 32px;
 
-        a {
-            text-decoration: none;
-            color: vars.$white;
-            font-size: 14px;
-            font-weight: 600;
-
-            .icon {
-                display: none;
-                width: 20px;
-                height: 20px;
+        .menu_navigation_list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+    
+            a {
+                text-decoration: none;
+                color: vars.$white;
+                font-size: 14px;
+                font-weight: 600;
+    
+                .icon {
+                    display: none;
+                    width: 20px;
+                    height: 20px;
+                }
             }
-        }
-
-        a:hover {
-            opacity: 0.6;
+    
+            a:hover {
+                opacity: 0.6;
+            }
         }
     }
 }
@@ -49,34 +56,46 @@
     .header {
         padding: 0 90px;
 
-        .menu_navigation .menu_navigation_list{
-            a {
-                .text_menu {
-                    display: none;
+        .menu_navigation {
+            .menu_navigation_list {
+                a {
+                    .text_menu {
+                        font-size: 12px;
+                    }
                 }
-        
-                .icon {
-                    display: block;
+
+                li:first-child {
+                    display: grid;
                 }
             }
         }
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 690px) {
     .header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 32px 6px;
+        padding: 52px 6px;
+        margin-top: 32px;
 
-        .menu_navigation .menu_navigation_list {
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .menu_navigation {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
+            flex-direction: column;
+
+            .menu_navigation_list {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
         }
     }
 }

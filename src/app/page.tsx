@@ -40,7 +40,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.hero_right_side}>
-            <Image src={heroImg} alt="Hero Image"/>
+            <Image src={heroImg} alt="Hero Image" loading="lazy"/>
           </div>
       </div>
     </div>
