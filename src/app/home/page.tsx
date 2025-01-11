@@ -2,7 +2,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import Image from "next/image";
 import Link from "next/link";
 import heroImg from '../../assets/Hero.webp';
-import styles from './Home.module.scss';
+import styles from './styles.module.scss';
 
 export default function Home() {
     const { t } = useLanguage()

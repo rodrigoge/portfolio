@@ -1,11 +1,42 @@
+'use client'
+
 import Header from '@/components/Header/Header'
-import InProgress from '@/components/InProgress/InProgress'
+import { useLanguage } from '@/hooks/useLanguage'
+import Image from 'next/image'
+import gridImage01 from '../../assets/GridImage01.webp'
+import gridImage02 from '../../assets/GridImage02.webp'
+import gridImage03 from '../../assets/GridImage03.webp'
+import gridImage04 from '../../assets/GridImage04.webp'
+import styles from './styles.module.scss'
 
 export default function About() {
+    const { t } = useLanguage()
+
     return(
         <div>
-            <Header />
-            <InProgress />
+          <Header />
+          <div className={styles.about_container}>
+            <div className={styles.about_left_side}>
+              <span className={styles.title}>
+                {t("aboutMe")}
+              </span>
+              <br />
+              <div className={styles.about_resume}>
+                <span>{t("aboutMeResume")}</span>
+              </div>
+            </div>
+
+            <div className={styles.about_right_side}>
+              <div className={styles.left_grid_image}>
+                <Image src={gridImage01} alt="Hero Image" loading="eager" priority/>
+                <Image src={gridImage02} alt="Hero Image" loading="eager" priority/>
+              </div>
+              <div className={styles.right_grid_image}>
+                <Image src={gridImage03} alt="Hero Image" loading="eager" priority/>
+                <Image src={gridImage04} alt="Hero Image" loading="eager" priority/>
+              </div>
+            </div>
+          </div>
         </div>
     )
 }
