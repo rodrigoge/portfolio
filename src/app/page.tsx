@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 import { useLanguage } from "@/hooks/useLanguage";
 import Image from "next/image";
 import Link from "next/link";
-import heroImg from '../assets/Hero.png';
+import heroImg from '../assets/Hero.webp';
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.hero_right_side}>
-            <Image src={heroImg} alt="Hero Image" loading="lazy"/>
+            <Image src={heroImg} alt="Hero Image" loading="eager" priority/>
           </div>
       </div>
     </div>

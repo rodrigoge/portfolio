@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/hooks/useLanguage";
 import Image from "next/image";
-import inProgressImg from '../../assets/InProgress.png';
+import inProgressImg from '../../assets/InProgress.webp';
 import styles from './InProgress.module.scss';
 
 export default function InProgress() {
@@ -17,6 +17,7 @@ export default function InProgress() {
                 src={inProgressImg} 
                 alt='In progress image' 
                 className={styles.in_progress_img}
+                loading="eager" priority
             />
         </div>
     )
