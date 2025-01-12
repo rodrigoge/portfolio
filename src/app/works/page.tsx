@@ -56,7 +56,7 @@ export default function Works() {
                 </div>
                 <div className={styles.images_container}>
                     <Link 
-                        href={'https://github.com/comanda-app/comanda-web'} 
+                        href={'https://www.figma.com/design/eUmxTkH7pptIjnLWQeWf9C/Comanda?m=auto&t=dn8eLG128as8pB8h-1'} 
                         target="_blank"
                         className={styles.link}
                     >
