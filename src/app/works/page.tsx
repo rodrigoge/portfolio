@@ -150,7 +150,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg10} alt="Work Image 10" loading="eager" priority/>
+                        <Image src={workImg10} alt="Work Image 10" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Patas Felizes
