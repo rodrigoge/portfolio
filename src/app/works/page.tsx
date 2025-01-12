@@ -34,7 +34,7 @@ export default function Works() {
                         target="_blank" 
                         className={styles.link}
                     >
-                        <Image src={workImg01} alt="Work Image 1" loading="eager" priority/>
+                        <Image src={workImg01} alt="Work Image 1" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Social App
@@ -46,7 +46,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg02} alt="Work Image 2" loading="eager" priority/>
+                        <Image src={workImg02} alt="Work Image 2" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 ReFood
@@ -60,7 +60,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg03} alt="Work Image 3" loading="eager" priority/>
+                        <Image src={workImg03} alt="Work Image 3" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Comanda App
@@ -72,7 +72,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg04} alt="Work Image 4" loading="eager" priority/>
+                        <Image src={workImg04} alt="Work Image 4" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Eco
@@ -86,7 +86,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg05} alt="Work Image 5" loading="eager" priority/>
+                        <Image src={workImg05} alt="Work Image 5" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 DevRadar
@@ -98,7 +98,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg06} alt="Work Image 6" loading="eager" priority/>
+                        <Image src={workImg06} alt="Work Image 6" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Let Me Ask
@@ -112,7 +112,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg07} alt="Work Image 7" loading="eager" priority/>
+                        <Image src={workImg07} alt="Work Image 7" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Noturnal Theme
@@ -124,7 +124,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg08} alt="Work Image 8" loading="eager" priority/>
+                        <Image src={workImg08} alt="Work Image 8" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Weather App
@@ -138,7 +138,7 @@ export default function Works() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <Image src={workImg09} alt="Work Image 9" loading="eager" priority/>
+                        <Image src={workImg09} alt="Work Image 9" loading="eager" priority layout="responsive"/>
                         <div className={styles.overlay}>
                             <span className={styles.overlay_title}>
                                 Globi App
