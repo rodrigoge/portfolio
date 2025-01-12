@@ -1,9 +1,8 @@
 'use client'
 
 import Header from "@/components/Header/Header";
+import OverlayCard from "@/components/OverlayCard/OverlayCard";
 import { useLanguage } from "@/hooks/useLanguage";
-import Image from "next/image";
-import Link from "next/link";
 import workImg01 from '../../assets/Work01.webp';
 import workImg02 from '../../assets/Work02.webp';
 import workImg03 from '../../assets/Work03.webp';
@@ -29,134 +28,74 @@ export default function Works() {
                     <span>{t("worksResume")}</span>
                 </div>
                 <div className={styles.images_container}>
-                    <Link 
-                        href={'https://www.figma.com/design/Rodw85X9fBNt7lQgHeKea1/Social?m=auto&t=dn8eLG128as8pB8h-1'} 
-                        target="_blank" 
-                        className={styles.link}
-                    >
-                        <Image src={workImg01} alt="Work Image 1" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Social App
-                            </span>
-                        </div>
-                    </Link> 
-                    <Link 
-                        href={'https://www.figma.com/design/HFHywpTt0v1tv6MjNfAqog/ReFood?m=auto&t=dn8eLG128as8pB8h-1'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg02} alt="Work Image 2" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                ReFood
-                            </span>
-                        </div>
-                    </Link>
+                    <OverlayCard 
+                        srcImage={workImg01}
+                        altImage={"Work Image 1"}
+                        linkTo={"https://www.figma.com/design/Rodw85X9fBNt7lQgHeKea1/Social?m=auto&t=dn8eLG128as8pB8h-1"}
+                        projectName={'Social App'}
+                    />
+                    <OverlayCard 
+                        srcImage={workImg02}
+                        altImage={"Work Image 2"}
+                        linkTo={"https://www.figma.com/design/HFHywpTt0v1tv6MjNfAqog/ReFood?m=auto&t=dn8eLG128as8pB8h-1"}
+                        projectName={'ReFood'}
+                    />
                 </div>
                 <div className={styles.images_container}>
-                    <Link 
-                        href={'https://www.figma.com/design/eUmxTkH7pptIjnLWQeWf9C/Comanda?m=auto&t=dn8eLG128as8pB8h-1'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg03} alt="Work Image 3" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Comanda App
-                            </span>
-                        </div>
-                    </Link>
-                    <Link 
-                        href={'https://github.com/rodrigoge/eco'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg04} alt="Work Image 4" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Eco
-                            </span>
-                        </div>
-                    </Link>
+                    <OverlayCard 
+                        srcImage={workImg03}
+                        altImage={"Work Image 3"}
+                        linkTo={"https://www.figma.com/design/eUmxTkH7pptIjnLWQeWf9C/Comanda?m=auto&t=dn8eLG128as8pB8h-1"}
+                        projectName={'Comanda App'}
+                    />
+                    <OverlayCard 
+                        srcImage={workImg04}
+                        altImage={"Work Image 4"}
+                        linkTo={"https://github.com/rodrigoge/eco"}
+                        projectName={'Eco'}
+                    />
                 </div>
                 <div className={styles.images_container}>
-                    <Link 
-                        href={'https://github.com/rodrigoge/devradar'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg05} alt="Work Image 5" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                DevRadar
-                            </span>
-                        </div>
-                    </Link>
-                    <Link 
-                        href={'https://github.com/rodrigoge/let-me-ask'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg06} alt="Work Image 6" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Let Me Ask
-                            </span>
-                        </div>
-                    </Link>
+                    <OverlayCard 
+                        srcImage={workImg05}
+                        altImage={"Work Image 5"}
+                        linkTo={"https://github.com/rodrigoge/devradar"}
+                        projectName={'Dev Radar'}
+                    />
+                    <OverlayCard 
+                        srcImage={workImg06}
+                        altImage={"Work Image 6"}
+                        linkTo={"https://github.com/rodrigoge/let-me-ask"}
+                        projectName={'Let Me Ask'}
+                    />
                 </div>
                 <div className={styles.images_container}>
-                    <Link 
-                        href={'https://github.com/rodrigoge/noturnal'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg07} alt="Work Image 7" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Noturnal Theme
-                            </span>
-                        </div>
-                    </Link>
-                    <Link 
-                        href={'https://github.com/rodrigoge/weather-app'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg08} alt="Work Image 8" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Weather App
-                            </span>
-                        </div>
-                    </Link>
+                    <OverlayCard 
+                        srcImage={workImg07}
+                        altImage={"Work Image 7"}
+                        linkTo={"https://github.com/rodrigoge/noturnal"}
+                        projectName={'Noturnal Theme'}
+                    />
+                    <OverlayCard 
+                        srcImage={workImg08}
+                        altImage={"Work Image 8"}
+                        linkTo={"https://github.com/rodrigoge/weather-app"}
+                        projectName={'Weather App'}
+                    />
                 </div>
                 <div className={styles.images_container}>
-                    <Link 
-                        href={'https://github.com/rodrigoge/globi.app'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg09} alt="Work Image 9" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Globi App
-                            </span>
-                        </div>
-                    </Link>
-                    <Link 
-                        href={'https://github.com/rodrigoge/patas-felizes'} 
-                        target="_blank"
-                        className={styles.link}
-                    >
-                        <Image src={workImg10} alt="Work Image 10" loading="eager" priority layout="responsive"/>
-                        <div className={styles.overlay}>
-                            <span className={styles.overlay_title}>
-                                Patas Felizes
-                            </span>
-                        </div>
-                    </Link>
+                    <OverlayCard 
+                        srcImage={workImg09}
+                        altImage={"Work Image 9"}
+                        linkTo={"https://github.com/rodrigoge/globi.app"}
+                        projectName={'Globi App'}
+                    />
+                    <OverlayCard 
+                        srcImage={workImg10}
+                        altImage={"Work Image 10"}
+                        linkTo={"https://github.com/rodrigoge/patas-felizes"}
+                        projectName={'Patas Felizes'}
+                    />
                 </div>
             </div>
         </div>
