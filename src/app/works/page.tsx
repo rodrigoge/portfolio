@@ -35,6 +35,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg01} alt="Work Image 1" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Social App
+                            </span>
+                        </div>
                     </Link> 
                     <Link 
                         href={'https://www.figma.com/design/HFHywpTt0v1tv6MjNfAqog/ReFood?m=auto&t=dn8eLG128as8pB8h-1'} 
@@ -42,6 +47,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg02} alt="Work Image 2" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                ReFood
+                            </span>
+                        </div>
                     </Link>
                 </div>
                 <div className={styles.images_container}>
@@ -51,6 +61,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg03} alt="Work Image 3" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Comanda App
+                            </span>
+                        </div>
                     </Link>
                     <Link 
                         href={'https://github.com/rodrigoge/eco'} 
@@ -58,6 +73,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg04} alt="Work Image 4" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Eco
+                            </span>
+                        </div>
                     </Link>
                 </div>
                 <div className={styles.images_container}>
@@ -67,6 +87,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg05} alt="Work Image 5" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                DevRadar
+                            </span>
+                        </div>
                     </Link>
                     <Link 
                         href={'https://github.com/rodrigoge/let-me-ask'} 
@@ -74,6 +99,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg06} alt="Work Image 6" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Let Me Ask
+                            </span>
+                        </div>
                     </Link>
                 </div>
                 <div className={styles.images_container}>
@@ -83,6 +113,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg07} alt="Work Image 7" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Noturnal Theme
+                            </span>
+                        </div>
                     </Link>
                     <Link 
                         href={'https://github.com/rodrigoge/weather-app'} 
@@ -90,6 +125,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg08} alt="Work Image 8" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Weather App
+                            </span>
+                        </div>
                     </Link>
                 </div>
                 <div className={styles.images_container}>
@@ -99,6 +139,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg09} alt="Work Image 9" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Globi App
+                            </span>
+                        </div>
                     </Link>
                     <Link 
                         href={'https://github.com/rodrigoge/patas-felizes'} 
@@ -106,6 +151,11 @@ export default function Works() {
                         className={styles.link}
                     >
                         <Image src={workImg10} alt="Work Image 10" loading="eager" priority/>
+                        <div className={styles.overlay}>
+                            <span className={styles.overlay_title}>
+                                Patas Felizes
+                            </span>
+                        </div>
                     </Link>
                 </div>
             </div>
