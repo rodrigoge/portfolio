@@ -10,8 +10,6 @@
     img {
         display: block;
         border-radius: 6px;
-        width: 100%; 
-        height: 100%; 
         transition: transform 0.3s ease, opacity 0.3s ease; 
     }
   
@@ -69,6 +67,14 @@
 
         img:hover {
             transform: scale(1.2);
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .link {
+        img {
+            width: 320px !important;
         }
     }
 }
