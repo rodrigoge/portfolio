@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import OverlayCard from "@/components/OverlayCard/OverlayCard";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -98,6 +99,7 @@ export default function Works() {
                     />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

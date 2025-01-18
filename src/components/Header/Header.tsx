@@ -40,13 +40,6 @@ export default function Header() {
                             </span>
                         </Link>
                     </li>
-                    <li>
-                        <Link href={"/contact"}>
-                            <span className={styles.text_menu}>
-                                {t("contact")}
-                            </span>
-                        </Link>
-                    </li>
                 </ul>
             </nav>
         </header>

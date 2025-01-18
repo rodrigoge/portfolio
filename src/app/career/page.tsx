@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Item from "@/components/Item/Item";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -53,6 +54,7 @@ export default function Career() {
                     fourthTechTag="Monolito"
                 />
             </div>
+            <Footer />
         </div>
     )
 }

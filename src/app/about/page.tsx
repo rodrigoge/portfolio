@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import { useLanguage } from '@/hooks/useLanguage'
 import Image from 'next/image'
@@ -37,6 +38,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
     )
 }

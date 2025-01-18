@@ -1,0 +1,69 @@
+@use '../../styles/global' as vars;
+
+.container {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+    color: vars.$white;
+    font-size: 14px;
+
+    .left_panel {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .right_panel {
+        display: flex;
+        flex-direction: column;
+        
+        a {
+            color: vars.$white;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+    
+        .left_panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 6px;
+        }
+    
+        .right_panel {
+            display: flex;
+            flex-direction: column;
+            
+            a {
+                color: vars.$white;
+    
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        padding: 32px 6px;
+    }
+}
