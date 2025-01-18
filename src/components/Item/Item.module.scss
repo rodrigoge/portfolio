@@ -1,0 +1,65 @@
+@use '../../styles/global' as vars;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 56px;
+
+    .item_title {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+
+        .role {
+            font-weight: 600;
+        }
+
+        a {
+            color: vars.$white;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .working_time {
+            font-size: 12px;
+        }
+    }
+
+    .resume {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        display: flex;
+        align-items: center;
+    
+        .item_title {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+        }
+    
+        .resume {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        display: flex;
+        align-items: center;
+    
+        .item_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

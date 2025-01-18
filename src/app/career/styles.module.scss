@@ -1,0 +1,40 @@
+@use '../../styles/global.scss' as vars;
+
+.career_container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 220px;
+    gap: 36px;
+    color: vars.$white;
+
+    .title {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    .career_resume {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: justify;
+        gap: 6px;
+    }
+
+    hr {
+        border-top: 1px solid vars.$grey;
+        width: 100%;
+    }
+}
+
+@media (max-width: 920px) {
+    .career_container {
+        padding: 60px 90px;
+    }
+}
+
+@media (max-width: 540px) {
+    .career_container {
+        padding: 60px 6px;
+        text-align: center;
+    }
+}
