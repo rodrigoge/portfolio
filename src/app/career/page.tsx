@@ -23,6 +23,10 @@ export default function Career() {
                     link="https://hst.com.br/pt-br/"
                     workingTime={`2022 - ${t("currently")}`}
                     resume={(t("firstCareerResume"))}
+                    firstTechTag="Java"
+                    secondTechTag="Spring"
+                    thirdTechTag="React"
+                    fourthTechTag="Microsservices"
                 />
                 <hr />
                 <Item 
@@ -31,6 +35,10 @@ export default function Career() {
                     link="https://tinnova.com.br/"
                     workingTime="2022"
                     resume={(t("secondCareerResume"))}
+                    firstTechTag="Java"
+                    secondTechTag="Spring"
+                    thirdTechTag="Microsservices"
+                    fourthTechTag="Kafka"
                 />
                 <hr />
                 <Item 
@@ -39,6 +47,10 @@ export default function Career() {
                     link="https://www.b2ml.com.br/"
                     workingTime="2020 - 2022"
                     resume={(t("thirdCareerResume"))}
+                    firstTechTag="Java"
+                    secondTechTag="JSF"
+                    thirdTechTag="Primefaces"
+                    fourthTechTag="Monolito"
                 />
             </div>
         </div>

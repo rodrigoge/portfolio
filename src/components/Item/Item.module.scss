@@ -31,6 +31,14 @@
     .resume {
         text-align: justify;
     }
+
+    .tag {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -56,6 +64,13 @@
         align-items: center;
     
         .item_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tag {
             display: flex;
             flex-direction: column;
             justify-content: center;

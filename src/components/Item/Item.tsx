@@ -1,6 +1,7 @@
 import { useLanguage } from '@/hooks/useLanguage'
 import { ItemType } from '@/types/ItemType'
 import Link from 'next/link'
+import Tag from '../Tag/Tag'
 import styles from './Item.module.scss'
 
 export default function Item({
@@ -8,7 +9,11 @@ export default function Item({
     enterprise,
     link,
     workingTime,
-    resume
+    resume,
+    firstTechTag,
+    secondTechTag,
+    thirdTechTag,
+    fourthTechTag
 }: ItemType) {
     const {t} = useLanguage()
     return(
@@ -25,6 +30,12 @@ export default function Item({
             </div>
             <div className={styles.resume}>
                 {resume}
+            </div>
+            <div className={styles.tag}>
+                <Tag text={firstTechTag} />
+                <Tag text={secondTechTag} />
+                <Tag text={thirdTechTag} />
+                <Tag text={fourthTechTag} />
             </div>
         </div>
     )

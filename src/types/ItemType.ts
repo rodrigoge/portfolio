@@ -4,4 +4,8 @@ export interface ItemType {
     link: string,
     workingTime: string,
     resume: string
+    firstTechTag: string
+    secondTechTag: string
+    thirdTechTag: string
+    fourthTechTag: string
 }
